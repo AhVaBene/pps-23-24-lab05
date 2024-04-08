@@ -29,11 +29,11 @@ object SecondDegreePolynomial:
 
   case class SecondDegreePolynomialImpl2(secondDegree: Double, firstDegree: Double, constant: Double) extends SecondDegreePolynomial:
     override def -(polynomial: SecondDegreePolynomial): SecondDegreePolynomial = 
-      new SecondDegreePolynomialImpl2(secondDegree = secondDegree - polynomial.secondDegree, 
+      SecondDegreePolynomialImpl2(secondDegree = secondDegree - polynomial.secondDegree,
           firstDegree = firstDegree - polynomial.firstDegree, constant = constant - polynomial.constant)
 
     override def +(polynomial: SecondDegreePolynomial): SecondDegreePolynomial = 
-       new SecondDegreePolynomialImpl2(secondDegree = secondDegree + polynomial.secondDegree, 
+       SecondDegreePolynomialImpl2(secondDegree = secondDegree + polynomial.secondDegree,
           firstDegree = firstDegree + polynomial.firstDegree, constant = constant + polynomial.constant)
 
   
